@@ -71,7 +71,7 @@ Template.listCustomers.events({
 });
 
 var navigateToCustomersRoute = function(sortField) {
-  Router.go('listCustomers', {
+  Router.go('customerIndex', {
     page: Router.current().params.page || 1,
     sortField: sortField,
     sortDirection: CustomerSortSettings.toggleSortDirection(sortField)
