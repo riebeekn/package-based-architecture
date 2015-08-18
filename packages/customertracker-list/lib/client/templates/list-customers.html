@@ -1,0 +1,55 @@
+<template name="listCustomers">
+	{{#unless Template.subscriptionsReady}}
+    {{> spinner}}
+  {{/unless}}
+	<table class="table">
+    <thead>
+      <tr>
+        <th>
+          <a id="firstName" href="#">First name
+            <span>
+              <i class="{{firstNameIconClass}}"></i>
+            </span>
+          </a>
+        </th>
+        <th>
+          <a id="lastName" href="#">Last name
+            <span>
+              <i class="{{lastNameIconClass}}"></i>
+            </span>
+          </a>
+        </th>
+        <th>
+          <a id="email" href="#">Email
+            <span>
+              <i class="{{emailIconClass}}"></i>
+            </span>
+          </a>
+        </th>
+      </tr>
+    </thead>
+		<tbody>
+			{{#each customers}}
+				<tr>
+					<td>{{name}}</td>
+					<td>{{surname}}</td>
+					<td>{{email}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+  <nav>
+    <ul class="pager">
+      <li class="{{prevPageClass}}">
+        <a id="prevPage" href="{{prevPage}}">
+          <span aria-hidden="true">&larr;</span> Previous
+        </a>
+      </li>
+      <li class="{{nextPageClass}}">
+        <a id="nextPage" href="{{nextPage}}">
+          Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</template>
