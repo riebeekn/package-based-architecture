@@ -8,5 +8,5 @@ customertracker:lib
 customertracker:core
 customertracker:customer
 customertracker:newest
-#customertracker:list
+customertracker:list
 customertracker:add

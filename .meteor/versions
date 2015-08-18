@@ -12,6 +12,7 @@ customertracker:add@0.0.1
 customertracker:core@0.0.1
 customertracker:customer@0.0.1
 customertracker:lib@0.0.1
+customertracker:list@0.0.1
 customertracker:newest@0.0.1
 ddp@1.1.0
 deps@1.0.7
