@@ -4,11 +4,9 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
-iron:router
-twbs:bootstrap
-sacha:spin
-tmeasday:publish-counts
-percolate:find-from-publication
-aldeed:collection2
-natestrauser:font-awesome
+customertracker:lib
+customertracker:core
+customertracker:customer
+customertracker:newest
+customertracker:list
+customertracker:add
